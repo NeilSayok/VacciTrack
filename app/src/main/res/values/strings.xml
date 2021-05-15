@@ -1,0 +1,40 @@
+<resources>
+    <string name="cowin_url" translatable="false">https://www.cowin.gov.in/home</string>
+    <string name="api_url" translatable="false">https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin</string>
+    <string name="form_link" translatable="false">https://neilsayok-a4a87.web.app</string>
+    <string name="key_sp_name" translatable="false">appDataPref</string>
+    <string name="key_sp_pin_list" translatable="false">PIN_LIST</string>
+    <string name="key_sp_age_grp" translatable="false">AGE_GRP</string>
+
+
+    <string name="app_name">VacciTrack</string>
+    <string name="catch_phrase">Track your vaccine without a hassle</string>
+    <string name="rad_str_all_age_grp">All Age Group</string>
+    <string name="rad_str_age_45">Age 45+</string>
+    <string name="rad_str_below_45">Below 45</string>
+    <string name="pincode_header_text">Select pin code you want to get notfied</string>
+    <string name="tv_str_enter_pin_code">Enter Pin Code</string>
+    <string name="btn_str_add">Add</string>
+    <string name="header_my_pin_code_watch_list">My Pin Code Watch List</string>
+    <string name="btn_str_check_now">Check Now</string>
+    <string name="btn_strkeep_checking_every_3_hrs">Keep Checking Every 3 Hrs</string>
+    <string name="btn_str_goto_cowin_webstite">Goto COWin Webstite</string>
+    <string name="toast_txt_pin_present">Pin Already Present</string>
+    <string name="toast_txt_valid_pin">Please Enter A Valid Pincode</string>
+    <string name="mainact_snack_txt">We are checking for vaccines. Please check your notifcations from time to time to see if vaccines are available. We will not disturb you until vaccines are available in the requested Pin Codes.</string>
+    <string name="dissmiss">Dissmiss</string>
+    <string name="notif_head_search_comp">Vaccine Search Completed</string>
+    <string name="noti_msg_vacc_not_avail">No Vaccines are available at your selected pin codes for the selected age group.</string>
+    <string name="vacci_msg_vacci_avail_at_pins">Vaccines are available at your selected pin codes for the selected age group.</string>
+    <string name="vacc_desc_searching_for_vacc">We are Searching Vaccine</string>
+    <string name="vacc_Desc_vacc_found">A vaccine has been found Near You.</string>
+    <string name="noti_msg_searching_vaccines">Searching For Vaccines</string>
+    <string name="noti_msg_checking_vacc_availibility">Hold on tight while we check for the availability of vaccines in your area.</string>
+    <string name="noti_title_vaccine_found">Vaccine Found, Click To Expand</string>
+    <string name="noti_body_header">Vaccines are available at:</string>
+    <string name="noti_body_pin">Pin:</string>
+    <string name="noti_body_on">On</string>
+    <string name="noti_body_availibility">Avalibility</string>
+    <string name="btn_txt_how_to_be_bttr">Give Us Feed Back</string>
+
+</resources>

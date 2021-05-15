@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">वक्सीट्रैक</string>
+    <string name="catch_phrase">वैक्सीन की खबर रखे कोई परेशानी के बिना</string>
+    <string name="rad_str_all_age_grp">सभी उम्र वर्ग</string>
+    <string name="rad_str_age_45">उम्र 45+</string>
+    <string name="rad_str_below_45">उम्र 45 से निचे</string>
+    <string name="pincode_header_text">पिन कोड चुने जहा आप वैक्सीन की नोटिफिकेशन चाहिए</string>
+    <string name="tv_str_enter_pin_code">पिन कोड डालिए</string>
+    <string name="btn_str_add">ऐड</string>
+    <string name="header_my_pin_code_watch_list">पिन कोड सूचि</string>
+    <string name="btn_str_check_now">अभी खोजे</string>
+    <string name="btn_strkeep_checking_every_3_hrs">हर 3 घंटे में चेक करते रहें</string>
+    <string name="btn_str_goto_cowin_webstite">COWin वेबसाइट चले</string>
+    <string name="toast_txt_pin_present">पिन लिस्ट में है</string>
+    <string name="toast_txt_valid_pin">कृपया सही पिन कोड डाले</string>
+    <string name="mainact_snack_txt">हम टीकों की जांच कर रहे हैं। टीके उपलब्ध हैं या नहीं, यह देखने के लिए कृपया समय-समय पर अपनी सूचनाओं की जांच करें। अनुरोधित पिन कोड में टीके उपलब्ध होने तक हम आपको परेशान नहीं करेंगे।</string>
+    <string name="dissmiss">खारिज</string>
+    <string name="notif_head_search_comp">वैक्सीन की खोज पूरी हुई</string>
+    <string name="noti_msg_vacc_not_avail">कोई भी वैक्सीन उपलब्ध नहीं है आप के  चुनिंदे पिन कोड अवांग उम्र वर्ग के लिए|</string>
+    <string name="vacci_msg_vacci_avail_at_pins">वैक्सीन उपलब्ध है आप के  चुनिंदे पिन कोड अवांग उम्र वर्ग के लिए|</string>
+    <string name="vacc_desc_searching_for_vacc">हम वैक्सीन खोज रहे हैं</string>
+    <string name="vacc_Desc_vacc_found">आपके आस-पास वैक्सीन मिल गई है।</string>
+    <string name="noti_msg_searching_vaccines">Searching For Vaccines</string>
+    <string name="noti_msg_checking_vacc_availibility">Hold on tight while we check for the availability of vaccines in your area.</string>
+    <string name="noti_title_vaccine_found">वैक्सीन उपलब्ध है, विस्तार करने के लिए क्लिक करें|</string>
+    <string name="noti_body_header">टीके उपलब्ध हैं:</string>
+    <string name="noti_body_pin">पिन:</string>
+    <string name="noti_body_on">तारीख</string>
+    <string name="noti_body_availibility">मात्रा</string>
+    <string name="btn_txt_how_to_be_bttr">फीडबैक दे</string>
+
+
+</resources>

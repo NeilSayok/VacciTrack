@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="app_name">ভ্যাক্সিট্র্যাক</string>
+    <string name="catch_phrase">এবার ভ্যাকসিন খবর জানুন কোনো ঝামেলা ছাড়া</string>
+    <string name="rad_str_all_age_grp">সব বয়স গোষ্ঠী</string>
+    <string name="rad_str_age_45">বয়স 45 এর উর্ধে</string>
+    <string name="rad_str_below_45">বয়স 45 এর নিচে</string>
+    <string name="pincode_header_text">পিন কোড বাছুন যেখানে আপনি ভ্যাকসিন পেতে চান</string>
+    <string name="tv_str_enter_pin_code">পিন কোড লিখুন</string>
+    <string name="btn_str_add">অ্যাড</string>
+    <string name="header_my_pin_code_watch_list">আমার পিন কোডের তালিকা</string>
+    <string name="btn_str_check_now">এখন দেখ</string>
+    <string name="btn_strkeep_checking_every_3_hrs">প্রতি 3 ঘন্টায় চেক হোক</string>
+    <string name="btn_str_goto_cowin_webstite">COWin ওয়েবসাইট এ চলো </string>
+    <string name="toast_txt_pin_present">পিন তালিকায় আগেথেকে আছে </string>
+    <string name="toast_txt_valid_pin">দয়া করে একটি বৈধ পিনকোড প্রবেশ করুন</string>
+    <string name="mainact_snack_txt">আমরা ভ্যাকসিনগুলি পরীক্ষা করছি। ভ্যাকসিনগুলি উপলব্ধ কিনা তা জানতে দয়া করে আপনার নোটিফিকেশন সময়ে সময়ে পরীক্ষা করে দেখুন। অনুরোধিত পিন কোডগুলিতে ভ্যাকসিনগুলি না পাওয়া পর্যন্ত আমরা আপনাকে বিরক্ত করব না।</string>
+    <string name="dissmiss">ঠিক আছে</string>
+    <string name="notif_head_search_comp">ভ্যাকসিন অনুসন্ধান সম্পূর্ণ হয়েছে</string>
+    <string name="noti_msg_vacc_not_avail">আপনার নির্বাচিত পিনকোড এবং বয়েস গোষ্ঠী জন্য ভ্যাকসিন উপলব্ধ নেই|</string>
+    <string name="vacci_msg_vacci_avail_at_pins">আপনার নির্বাচিত পিনকোড এবং বয়েস গোষ্ঠী জন্য ভ্যাকসিন উপলব্ধ আছে|</string>
+    <string name="vacc_desc_searching_for_vacc">আমরা ভ্যাকসিন অনুসন্ধান করছি</string>
+    <string name="vacc_Desc_vacc_found">আপনার কাছাকাছি একটি ভ্যাকসিন পাওয়া গেছে।</string>
+    <string name="noti_msg_searching_vaccines">ভ্যাকসিনের অনুসন্ধান করা হচ্ছে</string>
+    <string name="noti_msg_checking_vacc_availibility">আমরা আপনার এলাকায় ভ্যাকসিন এর খোঁজ করছি|</string>
+    <string name="noti_title_vaccine_found">ভ্যাকসিন পাওয়া গেছে, প্রসারিত করতে ক্লিক করুন</string>
+    <string name="noti_body_header">ভ্যাকসিন এখানে উপলব্ধ আছে:</string>
+    <string name="noti_body_pin">পিন:</string>
+    <string name="noti_body_on">তারিক</string>
+    <string name="noti_body_availibility">মাত্রা</string>
+    <string name="btn_txt_how_to_be_bttr">ফিডব্যাক দিন</string>
+
+</resources>

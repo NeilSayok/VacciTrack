@@ -1,0 +1,2 @@
+rootProject.name = "Vaccitrack"
+include ':app'
