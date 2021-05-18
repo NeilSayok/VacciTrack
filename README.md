@@ -34,7 +34,12 @@ This app will check for availability of vaccines at almost every 3 hours and and
   
  **Both  *Check Now* and  *Keep Checking Every 3 HRS* will check for vaccines upto next 7days starting from current date**
  
- <a href="/path/to/image" download="myimage"><img src="/path/to/image" /></a>
+ ## To Download the App Click the Download button Below:
+
+
+ <a href="/NeilSayok/VacciTrack/releases/latest/download/NeilSayok/VacciTrack.apk" download="myimage"><img src="https://i.imgur.com/30zfihX.png" /></a>
+
+
 
  
  
