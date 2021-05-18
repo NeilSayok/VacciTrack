@@ -56,28 +56,36 @@ class CheckUpdateWorker(var context: Context, workerParams: WorkerParameters): W
         val url =context.getString(R.string.latest_release)
         val stringRequest = StringRequest(Request.Method.GET,url,
             {
-                val jsonObject = JSONObject(it)
+                try {
+                    val jsonObject = JSONObject(it)
 
 
-                if (BuildConfig.VERSION_NAME != jsonObject.getString("tag_name")){
-                    var updateNotificatonBuilder = NotificationCompat.Builder(applicationContext,CHANNEL_REQUIRE_UPDATE)
-                        .setContentTitle("An is available")
-                        .setContentText("An app update is available. Please update to get all the Latest feaures")
-                        .setColorized(true)
-                        .setColor(Color.RED)
-                        .setSmallIcon(R.drawable.ic_vaccine)
+                    if (BuildConfig.VERSION_NAME != jsonObject.getString("tag_name")) {
+                        var updateNotificatonBuilder =
+                            NotificationCompat.Builder(applicationContext, CHANNEL_REQUIRE_UPDATE)
+                                .setContentTitle("An update is available")
+                                .setContentText("An app update is available. Please update to get all the Latest feaures")
+                                .setColorized(true)
+                                .setColor(Color.RED)
+                                .setSmallIcon(R.drawable.ic_vaccine)
 
-                    val x = Intent(Intent.ACTION_VIEW)
-                    x.data = Uri.parse(jsonObject.getString("html_url"))
-                    val pendingIntent1 = PendingIntent.getActivity(applicationContext, 1, x, 0)
-                    updateNotificatonBuilder.addAction(R.drawable.ic_vaccine, "Update App",pendingIntent1)
+                        val x = Intent(Intent.ACTION_VIEW)
+                        x.data = Uri.parse(jsonObject.getString("html_url"))
+                        val pendingIntent1 = PendingIntent.getActivity(applicationContext, 1, x, 0)
+                        updateNotificatonBuilder.addAction(
+                            R.drawable.ic_vaccine,
+                            "Update App",
+                            pendingIntent1
+                        )
 
 
+                        val updateNotification = updateNotificatonBuilder.build()
+                        nManagerCompat.notify(NOTIFCATION_ID_REQUIRE_UPDATE, updateNotification)
 
-                    val updateNotification = updateNotificatonBuilder.build()
-                    nManagerCompat.notify(NOTIFCATION_ID_REQUIRE_UPDATE,updateNotification)
 
-
+                    }
+                }catch (e:Exception){
+                    e.printStackTrace()
                 }
             },{
                 it.printStackTrace()

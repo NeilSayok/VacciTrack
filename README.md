@@ -38,11 +38,19 @@ This app will check for availability of vaccines at almost every 3 hours and and
 
 - Github App Dounload link:
 
- <a href="/NeilSayok/VacciTrack/releases/latest/download/NeilSayok/asset-name.zip" download="myimage"><img src="https://i.imgur.com/30zfihX.png" /></a>
+ <a href="https://github.com/NeilSayok/VacciTrack/releases/releases/latest/download/VacciTrack.apk" download="myimage"><img src="https://i.imgur.com/30zfihX.png" /></a>
 
 
 
 ## App Screen shots:
+![Imgur](https://i.imgur.com/EEp12zu.jpg)
+![Imgur](https://i.imgur.com/8f04iuU.png)
+
+
+
+
+
+
 
 
 

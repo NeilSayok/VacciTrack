@@ -19,6 +19,7 @@ import neilsayok.github.vaccitrack.Helpers.VolleySingleton
 import neilsayok.github.vaccitrack.R
 import neilsayok.github.vaccitracker.Helpers.VaccineData
 import org.json.JSONObject
+import java.lang.Exception
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -93,83 +94,108 @@ class CheckVaccineWorker(var context: Context, workerParams: WorkerParameters): 
 
         val stringRequest = StringRequest(Request.Method.GET,url,
             {
-                //Log.d("Response",it)
-                val jsonObj = JSONObject(it)
-                val centers = jsonObj.getJSONArray("centers")
-                val l = centers.length()
-                if (l > 0)
-                    for(i in 0 until l){
-                        val centerDetails = centers.getJSONObject(i)
-                        val sessions = centerDetails.getJSONArray("sessions")
-                        val sessL = sessions.length()
-                        val pCode = centerDetails.getString("pincode")
-                        for (j in 0 until sessL){
-                            val sessObj = sessions.getJSONObject(j)
-                            val availCap = sessObj.getInt("available_capacity")
-                            val min_age_limit = sessObj.getInt("min_age_limit")
-                            val date = sessObj.getString("date")
+                try{
+                    //Log.d("Response",it)
+                    val jsonObj = JSONObject(it)
+                    val centers = jsonObj.getJSONArray("centers")
+                    val l = centers.length()
+                    if (l > 0)
+                        for (i in 0 until l) {
+                            val centerDetails = centers.getJSONObject(i)
+                            val sessions = centerDetails.getJSONArray("sessions")
+                            val sessL = sessions.length()
+                            val pCode = centerDetails.getString("pincode")
+                            for (j in 0 until sessL) {
+                                val sessObj = sessions.getJSONObject(j)
+                                val availCap = sessObj.getInt("available_capacity")
+                                val min_age_limit = sessObj.getInt("min_age_limit")
+                                val date = sessObj.getString("date")
 
-                           
 
-                            when(ageGrp){
-                                0->{
-                                    if (availCap > 0){
-                                        var x = 0
-                                        for(i in vaccineAvailList){
-                                            if (i.pinCode == pCode && i.date == date){
-                                                i.availiity += availCap
-                                                x++
-                                                break
+
+                                when (ageGrp) {
+                                    0 -> {
+                                        if (availCap > 0) {
+                                            var x = 0
+                                            for (i in vaccineAvailList) {
+                                                if (i.pinCode == pCode && i.date == date) {
+                                                    i.availiity += availCap
+                                                    x++
+                                                    break
+                                                }
                                             }
+                                            if (x == 0)
+                                                vaccineAvailList.add(
+                                                    VaccineData(
+                                                        pCode,
+                                                        min_age_limit,
+                                                        availCap,
+                                                        date
+                                                    )
+                                                )
+
                                         }
-                                        if(x == 0)
-                                            vaccineAvailList.add(VaccineData(pCode,min_age_limit,availCap,date))
+                                    }
+                                    1 -> {
+                                        if (availCap > 0 && min_age_limit >= 45) {
+                                            var x = 0
+                                            for (i in vaccineAvailList) {
+                                                if (i.pinCode == pCode && i.date == date) {
+                                                    i.availiity += availCap
+                                                    x++
+                                                    break
+                                                }
+                                            }
+                                            if (x == 0)
+                                                vaccineAvailList.add(
+                                                    VaccineData(
+                                                        pCode,
+                                                        min_age_limit,
+                                                        availCap,
+                                                        date
+                                                    )
+                                                )
+
+                                        }
 
                                     }
-                                }
-                                1->{
-                                    if (availCap > 0 && min_age_limit>=45){
-                                        var x = 0
-                                        for(i in vaccineAvailList){
-                                            if (i.pinCode == pCode && i.date == date){
-                                                i.availiity += availCap
-                                                x++
-                                                break
+                                    2 -> {
+                                        if (availCap > 0 && min_age_limit < 45) {
+                                            var x = 0
+                                            for (i in vaccineAvailList) {
+                                                if (i.pinCode == pCode && i.date == date) {
+                                                    i.availiity += availCap
+                                                    x++
+                                                    break
+                                                }
                                             }
+                                            if (x == 0)
+                                                vaccineAvailList.add(
+                                                    VaccineData(
+                                                        pCode,
+                                                        min_age_limit,
+                                                        availCap,
+                                                        date
+                                                    )
+                                                )
+
                                         }
-                                        if(x == 0)
-                                            vaccineAvailList.add(VaccineData(pCode,min_age_limit,availCap,date))
-
-                                    }
-
-                                }
-                                2->{
-                                    if (availCap > 0 && min_age_limit < 45){
-                                        var x = 0
-                                        for(i in vaccineAvailList){
-                                            if (i.pinCode == pCode && i.date == date){
-                                                i.availiity += availCap
-                                                x++
-                                                break
-                                            }
-                                        }
-                                        if(x == 0)
-                                            vaccineAvailList.add(VaccineData(pCode,min_age_limit,availCap,date))
-
                                     }
                                 }
+
+
                             }
-
-
-
                         }
-                    }
 
-                counter--
-                if (counter == 0){
+                    counter--
+                    if (counter == 0) {
+                        requestsExecuted()
+                    }
+            }catch(e: Exception){
+                    e.printStackTrace()
+                    counter = 0
                     requestsExecuted()
                 }
-
             },{
                 counter--
                 if (counter == 0){
