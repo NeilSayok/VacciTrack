@@ -2,6 +2,8 @@
     <string name="cowin_url" translatable="false">https://www.cowin.gov.in/home</string>
     <string name="api_url" translatable="false">https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin</string>
     <string name="form_link" translatable="false">https://neilsayok-a4a87.web.app</string>
+    <string name="latest_release" translatable="false">https://api.github.com/repos/NeilSayok/VacciTrack/releases/latest</string>
+
     <string name="key_sp_name" translatable="false">appDataPref</string>
     <string name="key_sp_pin_list" translatable="false">PIN_LIST</string>
     <string name="key_sp_age_grp" translatable="false">AGE_GRP</string>

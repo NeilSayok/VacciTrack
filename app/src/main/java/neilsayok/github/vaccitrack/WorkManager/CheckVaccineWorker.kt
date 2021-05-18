@@ -255,9 +255,6 @@ class CheckVaccineWorker(var context: Context, workerParams: WorkerParameters): 
         val i = Intent(Intent.ACTION_VIEW)
         i.data = Uri.parse(context.getString(R.string.cowin_url))
         val pendingIntent = PendingIntent.getActivity(context, 0, i, 0)
-
-
-
         notificationCompat.addAction(R.drawable.ic_vaccine, "Go To CoWin Site",pendingIntent)
 
 

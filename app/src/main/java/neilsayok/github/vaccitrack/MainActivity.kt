@@ -19,6 +19,7 @@ import androidx.work.*
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import neilsayok.github.vaccitrack.RecyclerViewHelpers.PinRVAdapter
+import neilsayok.github.vaccitrack.WorkManager.CheckUpdateWorker
 import neilsayok.github.vaccitracker.ViewModels.PinRVVMFactory
 import neilsayok.github.vaccitracker.ViewModels.PinRVViewModel
 import neilsayok.github.vaccitracker.WorkManager.CheckVaccineWorker
@@ -59,6 +60,21 @@ class MainActivity : AppCompatActivity() {
         initalize()
         rvInitializer()
         radioGroupHandler()
+        checkAppUpdateWorkerStart()
+    }
+
+    private fun checkAppUpdateWorkerStart() {
+        val checkAppUpdateWorker = PeriodicWorkRequestBuilder<CheckUpdateWorker>(3,
+        TimeUnit.HOURS,
+        1,TimeUnit.HOURS)
+            .setConstraints(constraints)
+            .build()
+        WorkManager.getInstance(applicationContext).enqueueUniquePeriodicWork("Checkupdate",ExistingPeriodicWorkPolicy.KEEP,checkAppUpdateWorker)
+
+//        val oneTimeWorkRequest = OneTimeWorkRequestBuilder<CheckUpdateWorker>()
+//            .setConstraints(constraints)
+//            .build()
+//        WorkManager.getInstance(applicationContext).enqueue(oneTimeWorkRequest)
     }
 
     private fun initalize() {
