@@ -17,7 +17,6 @@ import com.android.volley.toolbox.StringRequest
 import neilsayok.github.vaccitrack.BuildConfig
 import neilsayok.github.vaccitrack.Helpers.VolleySingleton
 import neilsayok.github.vaccitrack.R
-import org.json.JSONArray
 import org.json.JSONObject
 
 class CheckUpdateWorker(var context: Context, workerParams: WorkerParameters): Worker(context, workerParams) {
