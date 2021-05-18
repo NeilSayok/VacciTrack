@@ -39,5 +39,8 @@
     <string name="noti_body_on">On</string>
     <string name="noti_body_availibility">Avalibility</string>
     <string name="btn_txt_how_to_be_bttr">Give Us Feed Back</string>
+    <string name="update_available">An update is available</string>
+    <string name="update_avalaible_msg">An app update is available. Please update to get all the latest features</string>
+    <string name="update_app_btn_txt">Update App</string>
 
 </resources>

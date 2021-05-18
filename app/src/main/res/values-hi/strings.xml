@@ -27,6 +27,10 @@
     <string name="noti_body_on">तारीख</string>
     <string name="noti_body_availibility">मात्रा</string>
     <string name="btn_txt_how_to_be_bttr">फीडबैक दे</string>
+    <string name="update_available">एक अपडेट उपलब्ध है</string>
+    <string name="update_avalaible_msg">एक ऐप अपडेट उपलब्ध है। सभी नवीनतम सुविधाओं को प्राप्त करने के लिए कृपया अपडेट करें</string>
+    <string name="update_app_btn_txt">अपडेट ऐप</string>
+
 
 
 </resources>

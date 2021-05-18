@@ -63,8 +63,8 @@ class CheckUpdateWorker(var context: Context, workerParams: WorkerParameters): W
                     if (BuildConfig.VERSION_NAME != jsonObject.getString("tag_name")) {
                         var updateNotificatonBuilder =
                             NotificationCompat.Builder(applicationContext, CHANNEL_REQUIRE_UPDATE)
-                                .setContentTitle("An update is available")
-                                .setContentText("An app update is available. Please update to get all the Latest feaures")
+                                .setContentTitle(context.getString(R.string.update_available))
+                                .setContentText(context.getString(R.string.update_avalaible_msg))
                                 .setColorized(true)
                                 .setColor(Color.RED)
                                 .setSmallIcon(R.drawable.ic_vaccine)
@@ -74,7 +74,7 @@ class CheckUpdateWorker(var context: Context, workerParams: WorkerParameters): W
                         val pendingIntent1 = PendingIntent.getActivity(applicationContext, 1, x, 0)
                         updateNotificatonBuilder.addAction(
                             R.drawable.ic_vaccine,
-                            "Update App",
+                            context.getString(R.string.update_app_btn_txt),
                             pendingIntent1
                         )
 

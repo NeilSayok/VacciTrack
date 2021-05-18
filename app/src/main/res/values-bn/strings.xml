@@ -28,5 +28,9 @@
     <string name="noti_body_on">তারিক</string>
     <string name="noti_body_availibility">মাত্রা</string>
     <string name="btn_txt_how_to_be_bttr">ফিডব্যাক দিন</string>
+    <string name="update_available">আপডেট উপলব্ধ আছে</string>
+    <string name="update_avalaible_msg">একটি অ্যাপ আপডেট উপলব্ধ। সমস্ত সর্বশেষ বৈশিষ্ট্য পেতে আপডেট করুন</string>
+    <string name="update_app_btn_txt">আপডেট অ্যাপ</string>
+
 
 </resources>
