@@ -1,6 +1,5 @@
 <resources>
 
-    <string name="app_name">ভ্যাক্সিট্র্যাক</string>
     <string name="catch_phrase">এবার ভ্যাকসিন খবর জানুন কোনো ঝামেলা ছাড়া</string>
     <string name="rad_str_all_age_grp">সব বয়স গোষ্ঠী</string>
     <string name="rad_str_age_45">বয়স 45 এর উর্ধে</string>

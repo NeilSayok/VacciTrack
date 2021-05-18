@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var constraints: Constraints
     lateinit var snack: Snackbar
     lateinit var gotoForm: Button
+    lateinit var checkAppUpdateWorker:PeriodicWorkRequest
 
 
 
@@ -64,17 +65,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkAppUpdateWorkerStart() {
-        val checkAppUpdateWorker = PeriodicWorkRequestBuilder<CheckUpdateWorker>(3,
+        checkAppUpdateWorker  = PeriodicWorkRequestBuilder<CheckUpdateWorker>(12,
         TimeUnit.HOURS,
         1,TimeUnit.HOURS)
             .setConstraints(constraints)
             .build()
-        WorkManager.getInstance(applicationContext).enqueueUniquePeriodicWork("Checkupdate",ExistingPeriodicWorkPolicy.KEEP,checkAppUpdateWorker)
-
-//        val oneTimeWorkRequest = OneTimeWorkRequestBuilder<CheckUpdateWorker>()
-//            .setConstraints(constraints)
-//            .build()
-//        WorkManager.getInstance(applicationContext).enqueue(oneTimeWorkRequest)
+        WorkManager.getInstance(applicationContext).enqueue(checkAppUpdateWorker)
     }
 
     private fun initalize() {
@@ -197,6 +193,7 @@ class MainActivity : AppCompatActivity() {
                     .build()
                 WorkManager.getInstance(applicationContext).enqueue(oneTimeChecker)
                 WorkManager.getInstance(applicationContext).enqueue(checkVaccineRequest)
+                WorkManager.getInstance(applicationContext).enqueue(checkAppUpdateWorker)
                 snack.show()
 
             }

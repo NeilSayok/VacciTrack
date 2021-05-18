@@ -8,8 +8,9 @@
     <string name="key_sp_pin_list" translatable="false">PIN_LIST</string>
     <string name="key_sp_age_grp" translatable="false">AGE_GRP</string>
 
+    <string name="app_name" translatable="false">VacciTrack</string>
 
-    <string name="app_name">VacciTrack</string>
+
     <string name="catch_phrase">Track your vaccine without a hassle</string>
     <string name="rad_str_all_age_grp">All Age Group</string>
     <string name="rad_str_age_45">Age 45+</string>

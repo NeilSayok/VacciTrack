@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">वक्सीट्रैक</string>
     <string name="catch_phrase">वैक्सीन की खबर रखे कोई परेशानी के बिना</string>
     <string name="rad_str_all_age_grp">सभी उम्र वर्ग</string>
     <string name="rad_str_age_45">उम्र 45+</string>
