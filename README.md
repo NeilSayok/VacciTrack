@@ -36,15 +36,27 @@ This app will check for availability of vaccines at almost every 3 hours and and
  
  ## To Download the App Click the Download button Below:
 
-- Github App Dounload link:
+- Github App Download link:
 
  <a href="https://github.com/NeilSayok/VacciTrack/releases/latest/download/VacciTrack.apk" target="_blank" download="myimage"><img src="https://i.imgur.com/30zfihX.png" /></a>
 
+![Custom badge](https://img.shields.io/badge/dynamic/json.svg?label=App%20Downloads&url=https://api.github.com/repos/NeilSayok/VacciTrack/releases/latest&query=$.assets[0].download_count&style=flat-square)
 
 
 ## App Screen shots:
-![Imgur](https://i.imgur.com/EEp12zu.jpg)
-![Imgur](https://i.imgur.com/8f04iuU.png)
+<img style="width:50%;height:auto;" src="https://i.imgur.com/m84HuHs.jpg" />
+
+<img style="width:50%;height:auto;"  src="https://i.imgur.com/f5aDiIm.png" />
+
+<img style="width:50%;height:auto;" src="https://i.imgur.com/EEp12zu.jpg" />
+
+<img style="width:50%;height:auto;"  src="https://i.imgur.com/MsP3j3F.png" />
+
+<img style="width:50%;height:auto;" src="https://i.imgur.com/mWVGm22.png" />
+
+<img style="width:50%;height:auto;"  src="https://i.imgur.com/8L7YXuE.png" />
+
+<img style="width:50%;height:auto;" src="https://i.imgur.com/8f04iuU.png" />
 
 
 
@@ -54,6 +66,5 @@ This app will check for availability of vaccines at almost every 3 hours and and
 
 
 
-https://img.shields.io/badge/dynamic/json.svg?label=download&url=https://api.github.com/repos/NeilSayok/VacciTrack/releases/latest&query=$.assets[0].name&style=for-the-badge
- 
+
  
