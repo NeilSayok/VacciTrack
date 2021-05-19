@@ -1,4 +1,4 @@
-|<img style="width:64px;height:64px;border-radius:8px" src="https://i.imgur.com/sY6DQVj.png" /> 
+|<img width="64px" height="64px" style="border-radius:8px" src="https://i.imgur.com/sY6DQVj.png" /> 
 # VacciTrack
 
 ### Track Covid 19 vaccines at your selected pincodes for your selected age group.
