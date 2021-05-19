@@ -54,7 +54,7 @@ This app will check for availability of vaccines at almost every 3 hours and and
 | ----------- | ----------- |
 |<img style="width:50%;height:auto;" src="https://i.imgur.com/etgoUE7.png" />|<img style="width:50%;height:auto;" src="https://i.imgur.com/G0FKrFS.png" />|
 |<img style="width:50%;height:auto;"  src="https://i.imgur.com/rPC9Qm6.png" />|<img style="width:50%;height:auto;"  src="https://i.imgur.com/gRtopWr.png" />|
-|<img style="width:50%;height:auto;" src="https://i.imgur.com/ZoxNi1L.png" />|<img style="width:50%;height:auto;"  src="https://i.imgur.com/wwmMHxo.png" />|
+|<img style="width:50%;height:auto;" src="https://i.imgur.com/wwmMHxo.png" />|<img style="width:50%;height:auto;"  src="https://i.imgur.com/ZoxNi1L.png" />|
 |<img style="width:50%;height:auto;" src="https://i.imgur.com/WpZhiFV.png" />|<img style="width:50%;height:auto;"  src="https://i.imgur.com/Gws0M8n.png" />|
 |<img style="width:50%;height:auto;" src="https://i.imgur.com/cUAYkQl.png" />|<img style="width:50%;height:auto;" src="https://i.imgur.com/IOtW9IS.png" />|
 
