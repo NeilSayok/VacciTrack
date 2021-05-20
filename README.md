@@ -17,7 +17,7 @@ This app will check for availability of vaccines at almost every 3 hours and and
 
 - Enter The Pin Codes for Tracking:
 
-  For example: If you can take the vaccines in pincodes in 712246 and 712234.
+  For example: If you want to take the vaccines from pincodes 712246 and 712234.
   
   Enter 712246 in the input and click add.Then enter 712234 in the input and click add.
   
